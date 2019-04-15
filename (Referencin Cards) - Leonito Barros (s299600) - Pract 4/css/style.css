@@ -3,12 +3,20 @@
   padding: 0px;
   box-sizing: border-box;
 }
+/* Body  */
 body{
   font-size: 10px;
   font-family: sans-serif;
   background-color: #f3f2f5;
   margin: 0px 15px;
 }
+
+/* Container for the banner image */
+.container img{
+  width: 100%;
+}
+
+/* Navigation Bar */
 ul {
   list-style-type: none;
   margin: 0;
@@ -33,9 +41,11 @@ a{
   text-decoration: none;
   color: #211545;
 }
+
+/* Heading */
 .heading{
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 3px;
   margin-right: -3px;
   margin-top: 1rem;
@@ -44,13 +54,11 @@ a{
   color: #295879;
   position: relative;
 }
-.container img{
-  width: 100%;
-}
+
+/* Cards */
 .card-wrapper{
   resize: both;
   overflow: auto;
-  padding-left: 15px;
 }
 div.card{
   float:left;
@@ -91,12 +99,15 @@ div.card{
   text-align: center;
 }
 .desc{
-  font-size: 1.2rem;
-  margin-top: 30px;
+  font-size: 1rem;
+  margin-top: 15px;
   font-style: italic;
+  letter-spacing: 0.5px;
   text-align: center;
   color: #333;
 }
+
+/* Button on the cards */
 button{
   margin-top: 50px;
   margin-bottom: 40px;
@@ -111,6 +122,8 @@ button:hover{
   color: white;
   transition: .5s;
 }
+
+/* Footer and the social media contact */
 div.footer{
   resize: both;
   overflow: auto;
@@ -125,6 +138,18 @@ ul.social-media li img{
   width: 2rem;
   height: auto;
 }
+
+@media screen and (max-width: 414px){
+  div.topnav{
+    display: inline-block;
+  vertical-align: middle;
+  }
+
+  div.topnav li{
+    width:100%;
+  }
+}
+
 @media screen and (min-width: 1280px){
   div.card{
     width: calc(25% - 2rem);
@@ -143,14 +168,3 @@ ul.social-media li img{
       transition: transform .5s;
     }
   }
-
-@media screen and (max-width: 414px){
-  div.topnav{
-    display: inline-block;
-  vertical-align: middle;
-  }
-
-  div.topnav li{
-    width:100%;
-  }
-}
